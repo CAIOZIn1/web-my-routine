@@ -1,4 +1,4 @@
-import FrameAuth from "@/Components/FrameAuth";
+import FrameAuth from "@/components/FrameAuth";
 import Button from "@/global/Button";
 import Input from "@/global/Input";
 import Link from "next/link";

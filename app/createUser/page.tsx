@@ -1,4 +1,4 @@
-import FrameAuth from "@/Components/FrameAuth";
+import FrameAuth from "@/components/FrameAuth";
 
 const CreateUser = () => {
     return (

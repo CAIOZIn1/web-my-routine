@@ -1,3 +1,27 @@
+## Páginas desenvolvidas na aplicação
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipo do commit</th>
+      <th>Front-end</th>
+      <th>Conectado ao Back-end</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tela de login</td>
+      <td>✅</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>Tela de criar usuário</td>
+      <td>❌</td>
+      <td>❌</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Passos para incializar o projeto
 
 1- Primeiro instale as dependências:
@@ -24,30 +48,4 @@ pnpm dev
 bun dev
 ```
 
-Abra [http://localhost:3000](http://localhost:3000) no seu navegador e veja o projeto no ar.
-
-</hr>
-
-  ## Páginas desenvolvidas na aplicação
-
-<table>
-  <thead>
-    <tr>
-      <th>Tipo do commit</th>
-      <th>Front-end</th>
-      <th>Conectado ao Back-end</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Tela de login</td>
-      <td>✅</td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>Tela de criar usuário</td>
-      <td>❌</td>
-      <td>❌</td>
-    </tr>
-  </tbody>
-</table>
+>Abra [http://localhost:3000](http://localhost:3000) no seu navegador e veja o projeto no ar.
