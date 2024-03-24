@@ -16,9 +16,10 @@ interface Props{
   name?: string,
   label?: string | boolean;
   placeholder?: string;
+  required?: boolean;
 }
 
-const Input = ({type, name, label, placeholder, ...inputProps}: Props) => {
+const Input = ({type, name, label, placeholder, required = false, ...inputProps}: Props) => {
   const [passwordIsVisible, setPasswordIsVisible] = useState<boolean>(false);
 
   return (
@@ -28,13 +29,12 @@ const Input = ({type, name, label, placeholder, ...inputProps}: Props) => {
       )}
         {type === 'password' ? (
           <div className="flex w-full bg-white rounded-md items-center justify-end">
-          <input type={passwordIsVisible ? 'text' : 'password'} name="password" className="h-10 rounded-md p-2 outline-none w-full" placeholder="Ex: 123mudar"/>
+          <input type={passwordIsVisible ? 'text' : 'password'} name="password" className="h-10 rounded-md p-2 outline-none w-full" placeholder="Ex: 123mudar" required={required} {...inputProps}/>
             {passwordIsVisible ? (<FaRegEye className="mr-4 cursor-pointer rounded-lg text-xl" onClick={() => setPasswordIsVisible(!passwordIsVisible)}/>) : (<FaRegEyeSlash className="mr-4 cursor-pointer text-xl" onClick={() => setPasswordIsVisible(!passwordIsVisible)}/>)}
         </div>
         ) : (
-          <input type={type} name={name} className={`h-10 w-full rounded-md p-2 outline-none ${inputProps}`} placeholder={placeholder}/>
+          <input type={type} name={name} className={`h-10 w-full rounded-md p-2 outline-none`} placeholder={placeholder} required={required} {...inputProps}/>
         )}
-
     </>
     );
 }
